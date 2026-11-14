@@ -1,0 +1,50 @@
+version: '3' 
+services: 
+  bekerav-netology-prometheus: 
+     image: prom/prometheus:v2.47.2 
+     container_name: bekerav-netology-prometheus 
+     command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yml 
+     ports: 
+       - 9090:9090 
+     volumes: 
+       - ./prometheus:/etc/prometheus 
+       - prometheus-data:/prometheus
+     networks: 
+        - bekerav-my-netology-hw
+     restart: always 
+  bekerav-netology-pushgateway:
+    image: prom/pushgateway:v1.6.2
+    container_name: bekerav-netology-pushgateway
+    ports:
+      - 9091:9091
+    networks:
+      - bekerav-my-netology-hw
+    depends_on:
+      - bekerav-netology-prometheus
+    restart: unless-stopped
+  bekerav-netology-grafana: 
+    image: grafana/grafana
+    container_name: bekerav-netology-grafana
+    environment: 
+      GF_PATHS_CONFIG: /etc/grafana/custom.ini
+    ports: 
+      - 80:3000 
+    volumes: 
+      - ./grafana:/etc/grafana 
+      - grafana-data:/var/lib/grafana
+    networks: 
+      - bekerav-my-netology-hw
+    depends_on: 
+      - bekerav-netology-prometheus  
+    restart: unless-stopped 
+volumes: 
+  prometheus-data:
+  grafana-data: 
+networks: 
+  bekerav-my-netology-hw: 
+    driver: bridge 
+    ipam: 
+      config: 
+        - subnet: 10.5.0.0/16 
+          gateway: 10.5.0.1
+
