@@ -279,7 +279,7 @@ networks:
 ```
 `Cкриншоты`
 
-`запуск конфигурации`
+`Запуск конфигурации`
 
 
 ![запуск конфигурации](./img/t7_test_run.PNG)
@@ -300,7 +300,7 @@ networks:
 
 `Cкриншоты`
 
-`Выполните запрос в Pushgateway для помещения метрики`
+`Запрос в Pushgateway для помещения метрики`
 
 ![Выполните запрос в Pushgateway для помещения метрики](./img/t7_testRun_var.PNG)
 
@@ -309,15 +309,15 @@ networks:
 ![pushgateway ](./img/t7_testRun_pushgateway.PNG)
 
 
-`Залогиньтесь в Grafana`
+`Вход в Grafana`
 
 ![Залогиньтесь в Grafana](./img/t7_testRun_grafanaLogIn.PNG)
 
-`Cоздайте Data Source Prometheus`
+`Добавление Data Source Prometheus`
 
 ![Cоздайте Data Source Prometheus](./img/t7_testRun_grafanaDataSource.PNG)
 
-`Создайте график `
+`График `
 
 ![Cоздайте Data Source Prometheus](./img/t7_testRun_grafana.PNG)
 
@@ -334,9 +334,8 @@ networks:
 
 `Cкриншоты`
 
-`Остановите и удалите все контейнеры одной командой`
+`Остановка и удаление всех контейнеров одной командой`
 
 ![Остановите и удалите все контейнеры одной командой](./img/t8_kill.PNG)
-
 
 ---
