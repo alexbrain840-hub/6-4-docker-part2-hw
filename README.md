@@ -51,7 +51,7 @@ $ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 
 `установка docker compose`
 
-![install docker compose](img\install_docker_compose.PNG)
+![install docker compose](./img/install_docker_compose.PNG)
 
 
 ---
