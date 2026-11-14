@@ -157,7 +157,7 @@ services:
 `Выполните действия:`
 
     Создайте конфигурацию docker-compose для Grafana с именем контейнера <ваши фамилия и инициалы>-netology-grafana.
-    Добавьте необходимые тома с данными и конфигурацией (конфигурация лежит в репозитории в директории 6-04/grafana.
+    Добавьте необходимые тома с данными и конфигурацией (конфигурация лежит в репозитории в директории 6-04/grafana).
     Добавьте переменную окружения с путем до файла с кастомными настройками (должен быть в томе), в самом файле пропишите логин=<ваши фамилия и инициалы> пароль=netology.
     Обеспечьте внешний доступ к порту 3000 c порта 80 докер-сервера.
 
@@ -282,7 +282,7 @@ networks:
 `запуск конфигурации`
 
 
-![запуск конфигурации](img\t7_test_run.PNG)
+![запуск конфигурации](./img/t7_test_run.PNG)
 
 
 ---
@@ -302,24 +302,24 @@ networks:
 
 `Выполните запрос в Pushgateway для помещения метрики`
 
-![Выполните запрос в Pushgateway для помещения метрики](img\t7_testRun_var.PNG)
+![Выполните запрос в Pushgateway для помещения метрики](./img/t7_testRun_var.PNG)
 
-![prometheus](img\t7_testRun_prometheus.PNG)
+![prometheus](./img/t7_testRun_prometheus.PNG)
 
-![pushgateway ](img\t7_testRun_pushgateway.PNG)
+![pushgateway ](./img/t7_testRun_pushgateway.PNG)
 
 
 `Залогиньтесь в Grafana`
 
-![Залогиньтесь в Grafana](img\t7_testRun_grafanaLogIn.PNG)
+![Залогиньтесь в Grafana](./img/t7_testRun_grafanaLogIn.PNG)
 
 `Cоздайте Data Source Prometheus`
 
-![Cоздайте Data Source Prometheus](img\t7_testRun_grafanaDataSource.PNG)
+![Cоздайте Data Source Prometheus](./img/t7_testRun_grafanaDataSource.PNG)
 
 `Создайте график `
 
-![Cоздайте Data Source Prometheus](img\t7_testRun_grafana.PNG)
+![Cоздайте Data Source Prometheus](./img/t7_testRun_grafana.PNG)
 
 ---
 
@@ -336,7 +336,7 @@ networks:
 
 `Остановите и удалите все контейнеры одной командой`
 
-![Остановите и удалите все контейнеры одной командой](img\t8_kill.PNG)
+![Остановите и удалите все контейнеры одной командой](./img/t8_kill.PNG)
 
 
 ---
